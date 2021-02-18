@@ -10,10 +10,12 @@ var ajaxRequest = new XMLHttpRequest();
 
 						var place = document.getElementById("cardsBody");
 						var galleryPlace = document.getElementById("galleryPlace");
+						var indicatorPlace = document.getElementById("carIndic");
+						
 						for (var i = 0; i < jsonObj.imgSet.length; i++){
 							console.log(jsonObj.imgSet[i]);
 							BuildDiv(jsonObj.imgSet[i], place, i );
-							BuildGalleryDiv(jsonObj.imgSet[i], galleryPlace, i);
+							BuildGalleryDiv(jsonObj.imgSet[i], galleryPlace, indicatorPlace, i);
 						}
 						/*for (const imgSet of jsonObj.imgSet) {
 							console.log(imgSet);
@@ -51,7 +53,7 @@ var ajaxRequest = new XMLHttpRequest();
 			
 			place.appendChild(element);
 		}
-		function BuildGalleryDiv(objSet, place, number){
+		function BuildGalleryDiv(objSet, place, indicatorPlace, number){
 			let element = document.createElement("div");
 			//aggiungere al div gli elementi di una card
 			element.innerHTML = `
@@ -64,10 +66,15 @@ var ajaxRequest = new XMLHttpRequest();
             </div>
 			`;
 
+			let elementDue = document.createElement("li");
+			elementDue.setAttribute("data-target", "#carouselIndicat");
+			elementDue.setAttribute("data-slide-to", number);
+			
 			if (number == 0){
 				element.classList.add("active");
+				elementDue.classList.add("active");
 			}
-			
+
 			place.appendChild(element);
 		}
 	
