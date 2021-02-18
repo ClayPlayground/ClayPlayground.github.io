@@ -17,5 +17,11 @@ il file imageSet.json lo puoi aprire con il blocco note senza problemi
 
 Ogni immagine che metti nella cartella deve avere il blocco di informazioni corrispondente o non la trovi sul sito
 
+Poi apri github desktop: in basso a sinistra metti un piccolo titolo a piacere nella 
+sezione "summary" vicino all'icona profilo e poi 
+premi il tasto azzurro "commit to master".
+Infine premi nella barra grigio scuro al centro la zona "push origin"
+
+Dopo qualche minuto dovrebbe essere già caricato tutto sul sito
 
 
