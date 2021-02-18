@@ -1,0 +1,19 @@
+Ricorda che questa è la forma in cui si inseriscono i dati relativi alle immagini che carichi
+
+{"imgSet": [
+
+	{"titolo": "Titolodellafoto", 
+    "nomeFile": "disegno.svg", 
+    "BreveDescrizione" : "Sono massimo una riga di testo, meglio una frase sola", 
+    "categoria" : "foto"},
+
+	{"titolo": "LogoStiloso",
+     "nomeFile": "LogoSVG.svg",       //deve essere lo stesso nome che ha la foto che carichi in questa cartella
+     "BreveDescrizione" : "Il mio logo di stile" ,    //deve essere una frase per non rompere il resto dell'impaginazione
+     "categoria" : "logo"},                           // le categorie sono tre: logo, foto e disegno: se sbagli a scrivere questa roba non ti appare nulla sul sito
+
+]}
+
+Ogni immagine che metti nella cartella deve avere il blocco di informazioni corrispondente o non la trovi sul sito
+
+
