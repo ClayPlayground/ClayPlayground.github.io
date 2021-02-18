@@ -29,7 +29,7 @@ function CreateAndAppendServix(place, array){
         //CREAZIONE DELL'ELEMENTO
         let element = document.createElement("div");
         element.innerHTML = 
-       `<img class="d-block carolImage" src="${set.image}" alt="Image rended improperly">`;
+       `<img class="d-block carolImage" src="resources\\${set.image}" alt="Image rended improperly">`;
         //console.log(element); 
         element.classList.add("carousel-item")
         element.classList.add("carolImageContain")
