@@ -49,6 +49,7 @@ h2{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    justify-content: space-evenly;
     padding: 10px 0;
     min-height: 80vh;
     width: 100vw;
