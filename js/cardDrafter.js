@@ -36,7 +36,7 @@ var ajaxRequest = new XMLHttpRequest();
 			//aggiungere al div gli elementi di una card
 			element.innerHTML = `
 			<div class="card cardCustom" style="width: 18rem;">
-                <img class="card-img-top" src="resources/${objSet.nomeFile}" alt="${objSet.titolo}">
+                <img class="card-img-top cardImg" src="resources/${objSet.nomeFile}" alt="${objSet.titolo}">
                 <div class="card-body">
                     <h2 class="cardTitle">${objSet.titolo}
                     </h2>
