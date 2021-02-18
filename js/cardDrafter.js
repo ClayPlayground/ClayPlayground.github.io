@@ -9,9 +9,11 @@ var ajaxRequest = new XMLHttpRequest();
 						var jsonObj = JSON.parse(ajaxRequest.responseText);
 
 						var place = document.getElementById("cardsBody");
+						var galleryPlace = document.getElementById("galleryPlace");
 						for (var i = 0; i < jsonObj.imgSet.length; i++){
 							console.log(jsonObj.imgSet[i]);
 							BuildDiv(jsonObj.imgSet[i], place, i );
+							BuildGalleryDiv(jsonObj.imgSet[i], galleryPlace, i);
 						}
 						/*for (const imgSet of jsonObj.imgSet) {
 							console.log(imgSet);
@@ -46,6 +48,25 @@ var ajaxRequest = new XMLHttpRequest();
                     <p class="card-text">${objSet.BreveDescrizione}</p>
                 </div>
             </div>`;
+			
+			place.appendChild(element);
+		}
+		function BuildGalleryDiv(objSet, place, number){
+			let element = document.createElement("div");
+			//aggiungere al div gli elementi di una card
+			element.innerHTML = `
+			<div class="carousel-item">
+            <img class="d-block w-100" src="resources/${objSet.nomeFile}" alt="${objSet.titolo}">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>${objSet.titolo}</h5>
+                <p>${objSet.BreveDescrizione}</p>
+              </div>
+            </div>
+			`;
+
+			if (number == 0){
+				element.classList.add("active");
+			}
 			
 			place.appendChild(element);
 		}
