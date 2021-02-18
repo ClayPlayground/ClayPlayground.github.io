@@ -1,4 +1,5 @@
-Ricorda che questa è la forma in cui si inseriscono i dati relativi alle immagini che carichi
+Ricorda che questa è la forma in cui si inseriscono i dati relativi alle immagini che carichi nel file: imageSet.json
+il file imageSet.json lo puoi aprire con il blocco note senza problemi
 
 {"imgSet": [
 
@@ -15,5 +16,6 @@ Ricorda che questa è la forma in cui si inseriscono i dati relativi alle immagi
 ]}
 
 Ogni immagine che metti nella cartella deve avere il blocco di informazioni corrispondente o non la trovi sul sito
+
 
 
