@@ -2,6 +2,7 @@
     height: 10vh;
 }
 body{
+    position: relative;
     background-color: #333;
     background-image: linear-gradient(rgb(12, 0, 46),rgb(19, 8, 8));
     background-repeat: no-repeat;
@@ -73,4 +74,9 @@ h2{
 .card-body{
     background-color: transparent;
 
+}
+.panel{
+    position:absolute;
+    height: 100vh;
+    width: 100vw;
 }
