@@ -11,7 +11,7 @@ var ajaxRequest = new XMLHttpRequest();
 						var place = document.getElementById("cardsBody");
 						var galleryPlace = document.getElementById("galleryPlace");
 						var indicatorPlace = document.getElementById("carIndic");
-						
+
 						for (var i = 0; i < jsonObj.imgSet.length; i++){
 							console.log(jsonObj.imgSet[i]);
 							BuildDiv(jsonObj.imgSet[i], place, i );
@@ -76,5 +76,6 @@ var ajaxRequest = new XMLHttpRequest();
 			}
 
 			place.appendChild(element);
+			indicatorPlace.appendChild(elementDue);
 		}
 	
