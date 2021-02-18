@@ -1,5 +1,5 @@
 {"imgSet": [
-	{"titolo": "LogoCCaa", "nomeFile": "firstStar.svg", "BreveDescrizione" : "a"},
-	{"titolo": "LogoCCbb", "nomeFile": "resources/CCLogoSVG.svg", "BreveDescrizione" : "b"},
-	{"titolo": "LogoCCcc", "nomeFile": "firstStar.svg", "BreveDescrizione" : "c"}
+	{"titolo": "LogoCCaa", "nomeFile": "firstStar.svg", "BreveDescrizione" : "a", "categoria" : "foto"},
+	{"titolo": "LogoCCbb", "nomeFile": "resources/CCLogoSVG.svg", "BreveDescrizione" : "b" , "categoria" : "foto"},
+	{"titolo": "LogoCCcc", "nomeFile": "firstStar.svg", "BreveDescrizione" : "c", "categoria" : "foto"}
 ]}
