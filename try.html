@@ -14,15 +14,15 @@
 					if(ajaxRequest.status == 200){
 						//turn JSON into object
 						var jsonObj = JSON.parse(ajaxRequest.responseText);
-							
-						var title = jsonObj.imgSet[i].title;
-						var photoUrl = `https://clayplayground.github.io/${jsonObj.randomMessages[0].photoUrl}`;
+
+						var place = document.getElementById("cardsBody");
+
 						for (const imgSet of jsonObj.imgSet) {
-							BuildDiv(imgSet);								
+							console.log(imgSet);
+							BuildDiv(imgSet, place);								
 							}
 						//inject in html
-						place = document.getElementById("welcome");
-						InjectFunc(title, photoUrl, place);
+						//InjectFunc(title, photoUrl, place);
 						
 					}
 					else{
@@ -38,7 +38,7 @@
 			ajaxRequest.open('GET', 'https://clayplayground.github.io/resources/imageSet.json');
 			ajaxRequest.send();
 		}
-
+/*
 		function InjectFunc(titlo, urlo, place){
 			let element = document.createElement("div");
         element.innerHTML = 
@@ -52,17 +52,29 @@
 
         //APPENDERE L'ELEMENTO
         place.appendChild(element);
-		}
+		}*/
 
-		function BuildDiv(objSet){
+		function BuildDiv(objSet, place){
 			let element = document.createElement("div");
 			//aggiungere al div gli elementi di una card
+			element.innerHTML = `
+			<div class="card cardCustom" style="width: 18rem;">
+            <img class="card-img-top" src="resources/${objSet.nomeFile}" alt="${objSet.titolo}">
+            <div class="card-body">
+                <h2 class="cardTitle">${objSet.titolo}
+                </h2>
+            <p class="card-text">${objSet.BreveDescrizione}</p>
+            </div>
+            </div>`;
+
+			
+			place.appendChild(element);
 		}
 	
 	</script>	
 </head>
 <body onload="getWelcome()">
-	<div id="welcome"></div>
+	<div id="cardsBody"></div>
 	<p>This is an example website.</p>
 </body>
 </html>

@@ -39,6 +39,8 @@ function CreateAndAppendServix(place, array){
     }
 
 }
+
+function createAndAppendImgCard()
 function SetActiveClass(place){
     let element = place.firstElementChild;
     console.log(element);

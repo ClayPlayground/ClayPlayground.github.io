@@ -1,5 +1,5 @@
 {"imgSet": [
-	{"title": "LogoCC", "photoUrl": "firstStar.svg", "paragr" : ""},
-	{"title": "Stella", "photoUrl": "firstStar.svg", "paragr" : ""},
-	{"title": "InkSpot", "photoUrl": "firstStar.svg", "paragr" : ""}
+	{"titolo": "LogoCCaa", "nomeFile": "firstStar.svg", "BreveDescrizione" : "a"},
+	{"titolo": "LogoCCbb", "nomeFile": "firstStar.svg", "BreveDescrizione" : "b"},
+	{"titolo": "LogoCCcc", "nomeFile": "firstStar.svg", "BreveDescrizione" : "c"}
 ]}

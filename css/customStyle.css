@@ -17,6 +17,9 @@ h1{
     height: 100%;
     margin-left: 15px;
 }
+.cardTitle{
+    color: #333;
+}
 h2{
     color:whitesmoke;
 }
