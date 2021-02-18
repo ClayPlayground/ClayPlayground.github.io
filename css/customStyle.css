@@ -76,7 +76,7 @@ h2{
 
 }
 .panel{
-    position:absolute;
+    position:fixed;
     height: 100vh;
     width: 100vw;
 }
