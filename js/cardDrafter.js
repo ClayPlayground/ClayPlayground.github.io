@@ -10,8 +10,8 @@ var ajaxRequest = new XMLHttpRequest();
 
 						var place = document.getElementById("cardsBody");
 						for (var i = 0; i < jsonObj.imgSet.length; i++){
-							console.log(imgSet[i]);
-							BuildDiv(imgSet[i], place, i );
+							console.log(jsonObj.imgSet[i]);
+							BuildDiv(jsonObj.imgSet[i], place, i );
 						}
 						/*for (const imgSet of jsonObj.imgSet) {
 							console.log(imgSet);
