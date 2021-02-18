@@ -1,5 +1,5 @@
 {"imgSet": [
 	{"titolo": "LogoCCaa", "nomeFile": "firstStar.svg", "BreveDescrizione" : "a"},
-	{"titolo": "LogoCCbb", "nomeFile": "firstStar.svg", "BreveDescrizione" : "b"},
+	{"titolo": "LogoCCbb", "nomeFile": "resources/CCLogoSVG.svg", "BreveDescrizione" : "b"},
 	{"titolo": "LogoCCcc", "nomeFile": "firstStar.svg", "BreveDescrizione" : "c"}
 ]}
