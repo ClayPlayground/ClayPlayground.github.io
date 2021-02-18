@@ -57,14 +57,13 @@ var ajaxRequest = new XMLHttpRequest();
 			let element = document.createElement("div");
 			//aggiungere al div gli elementi di una card
 			element.innerHTML = `
-			<div class="carousel-item">
             <img class="d-block w-100" src="resources/${objSet.nomeFile}" alt="${objSet.titolo}">
             <div class="carousel-caption d-none d-md-block">
                 <h5>${objSet.titolo}</h5>
                 <p>${objSet.BreveDescrizione}</p>
               </div>
-            </div>
 			`;
+			element.classList.add("carousel-item")
 
 			let elementDue = document.createElement("li");
 			elementDue.setAttribute("data-target", "#carouselIndicat");
