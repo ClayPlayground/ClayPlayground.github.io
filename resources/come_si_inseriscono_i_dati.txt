@@ -25,3 +25,5 @@ Infine premi nella barra grigio scuro al centro la zona "push origin"
 Dopo qualche minuto dovrebbe essere già caricato tutto sul sito
 
 
+Se tutto va bene dovrei aver preparato anche un altro set chiamato "homepageSet"
+in cui caricare i dati per le immagini che vuoi nella home (ti consiglio un massimo di 5 immagini)

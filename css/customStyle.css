@@ -1,5 +1,7 @@
 .navStyle{
+    position:relative;
     height: 10vh;
+    z-index: 1;
 }
 body{
     position: relative;
@@ -39,9 +41,10 @@ h2{
     margin: 0 auto;
 }
 .footer{
+    position: relative;
     height: 10vh;
     background-color: #333;
-    
+    z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,12 +53,14 @@ h2{
     margin: 10px 20px;
 }
 .cardsBody{
+    position: relative;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
     padding: 10px 0;
     min-height: 80vh;
+    z-index: 1;
 }
 .bodySecret{
     background-image: linear-gradient(rgb(177, 158, 231),rgb(218, 226, 147));
@@ -80,4 +85,5 @@ h2{
     height: 100vh;
     width: 100vw;
     background-color: rgba(83, 83, 83, 0.5);
+    z-index: 10;
 }
