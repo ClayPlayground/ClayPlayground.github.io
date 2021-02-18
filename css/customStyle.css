@@ -52,7 +52,6 @@ h2{
     justify-content: space-evenly;
     padding: 10px 0;
     min-height: 80vh;
-    width: 100vw;
 }
 .bodySecret{
     background-image: linear-gradient(rgb(177, 158, 231),rgb(218, 226, 147));
