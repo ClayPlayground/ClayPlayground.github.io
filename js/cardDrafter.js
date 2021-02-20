@@ -8,8 +8,8 @@ var ajaxRequest = new XMLHttpRequest();
 				//turn JSON into object
 				var jsonObj = JSON.parse(ajaxRequest.responseText);
 
-				let galleryPlace = document.getElementById("galleryPlace");
-				let pageIndex =place.dataset.currentfile;
+				const galleryPlace = document.getElementById("galleryPlace");
+				const pageIndex =place.dataset.currentfile;
 				for (let i = 0; i < jsonObj.imgSet.length; i++){
 					if (pageIndex == jsonObj.imgSet[i].categoria)
 					{
