@@ -52,7 +52,7 @@ var ajaxRequest = new XMLHttpRequest();
 		}
 
 		//place.appendChild(element);
-		Appender(place, element);
+		place.appendChild(element);
 	}
 	
 	function Build(objSet, place){
@@ -69,9 +69,4 @@ var ajaxRequest = new XMLHttpRequest();
 		elem.style("width", "18rem");
 
 		place.appendChild(elem);
-		Appender(place, elem)
-	}
-
-	function Appender(x, y){
-        x.appendChild(y);
 	}
