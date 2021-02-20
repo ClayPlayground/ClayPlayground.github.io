@@ -58,7 +58,7 @@ var ajaxRequest = new XMLHttpRequest();
 	function BuildGalleryDiv(objSet, place, number){
 		let element = document.createElement("div");
 		element.innerHTML = `
-		<img class="d-block w-100 carolImage" src="resources/${objSet.nomeFile}" alt="${objSet.titolo}">
+		<img class="d-block carolImage" src="resources/${objSet.nomeFile}" alt="${objSet.titolo}">
 		<div class="carousel-caption d-none d-md-block">
 			<h5>${objSet.titolo}</h5>
 			<p>${objSet.BreveDescrizione}</p>
