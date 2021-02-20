@@ -9,7 +9,7 @@ var ajaxRequest = new XMLHttpRequest();
 				var jsonObj = JSON.parse(ajaxRequest.responseText);
 
 				const galleryPlace = document.getElementById("galleryPlace");
-				const pageIndex =place.dataset.currentfile;
+				const pageIndex =document.getElementById("cardsBody").dataset.currentfile;
 				for (let i = 0; i < jsonObj.imgSet.length; i++){
 					if (pageIndex == jsonObj.imgSet[i].categoria)
 					{
