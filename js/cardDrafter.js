@@ -50,7 +50,8 @@ var ajaxRequest = new XMLHttpRequest();
 				<p class="card-text">${objSet.BreveDescrizione}</p>
 			</div>
 		</div>`;
-		
+		console.log("element is "+element);
+		console.log("place is "+place)
 		place.appendChild(element);
 	}
 	function BuildGalleryDiv(objSet, place, number){
