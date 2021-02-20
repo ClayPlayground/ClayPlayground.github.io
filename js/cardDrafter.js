@@ -16,6 +16,7 @@ var ajaxRequest = new XMLHttpRequest();
 					{
 					Build(jsonObj.imgSet[i], place);
 					BuildGalleryDiv(jsonObj.imgSet[i], galleryPlace, i);
+					CreateAndAppend(jsonObj.imgSet[i], place);
 					}
 				}
 				if (place.innerHTML=""){
@@ -70,3 +71,17 @@ var ajaxRequest = new XMLHttpRequest();
 
 		place.appendChild(elem);
 	}
+
+	function CreateAndAppend(place, obj){
+
+        let element = document.createElement("div");
+            element.innerHTML = 
+           `<img class="d-block carolImage" src="resources/${obj.nomeFile}" alt="${obj.BreveDescrizione}">`;
+            //console.log(element); 
+            element.classList.add("carousel-item")
+            element.classList.add("carolImageContain")
+    
+            //APPENDERE L'ELEMENTO
+            place.appendChild(element);
+    
+    }

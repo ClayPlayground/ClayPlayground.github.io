@@ -63,7 +63,7 @@ var ajaxRequest = new XMLHttpRequest();
         element.classList.add("active");
 
         let indElement = indPlace.firstElementChild;
-        console.log("place.firstelement: "+inPlace.firstElementChild);
+        console.log("place.firstelement: "+indPlace.firstElementChild);
 
         indElement.classList.add("active");
     }
