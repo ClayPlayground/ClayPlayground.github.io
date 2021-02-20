@@ -54,11 +54,7 @@ var ajaxRequest = new XMLHttpRequest();
 		console.log("element inner is "+element.innerHTML);
 		console.log("place is "+place);
 		place.appendChild(element);
-		try {
-			place.appendChild(element.innerHTML)
-		} catch (error) {
-			console.log("e 404");
-		}
+		place.appendChild(element.nodeValue);
 		console.log("appended");
 	}
 
