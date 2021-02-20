@@ -14,9 +14,9 @@ var ajaxRequest = new XMLHttpRequest();
 				for (let i = 0; i < jsonObj.imgSet.length; i++){
 					if (pageIndex == jsonObj.imgSet[i].categoria)
 					{
-					Build(jsonObj.imgSet[i], place);
+					//Build(jsonObj.imgSet[i], place);
 					BuildGalleryDiv(jsonObj.imgSet[i], galleryPlace, i);
-					CreateAndAppend(jsonObj.imgSet[i], place);
+					//CreateAndAppend(jsonObj.imgSet[i], place);
 					}
 				}
 				if (place.innerHTML=""){
