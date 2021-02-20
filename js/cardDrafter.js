@@ -56,12 +56,13 @@ var ajaxRequest = new XMLHttpRequest();
 			element.classList.add("active");
 		}
 
-		place.appendChild(element);
+		//place.appendChild(element);
+		Appender(place, element);
 	}
 	
 	function Build(objSet, place, number){
-		let element = [document.createElement("div")];
-		element.innerHTML = `<div class="card cardCustom" style="width: 18rem;">
+		let elem = document.createElement("div");
+		elem.innerHTML = `<div class="card cardCustom" style="width: 18rem;">
 			<img class="card-img-top cardImg btnAble" src="resources/${objSet.nomeFile}" alt="${objSet.titolo}">
 			<div class="card-body">
 				<h2 class="cardTitle">${objSet.titolo}
@@ -69,5 +70,10 @@ var ajaxRequest = new XMLHttpRequest();
 				<p class="card-text">${objSet.BreveDescrizione}</p>
 			</div>
 		</div>`;
-		place.appendChild(element[0]);
+		//place.appendChild(elem);
+		Appender(place, elem)
+	}
+
+	function Appender(x, y){
+        x.appendChild(y);
 	}
