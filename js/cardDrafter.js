@@ -52,7 +52,7 @@ var ajaxRequest = new XMLHttpRequest();
 			element.classList.add("active");
 		}
 
-		document.getElementById("galleryPlace").append(element);
+		document.getElementById("galleryPlace").appendChild(element);
 		place.appendChild(element);
 	}
 	
@@ -68,7 +68,8 @@ var ajaxRequest = new XMLHttpRequest();
 		elem.classList.add("card");
 		elem.classList.add("cardCustom");
 		elem.style("width", "18rem");
-		document.getElementById("cardsBody").append(elem);
+		
+		document.getElementById("cardsBody").appendChild(elem);
 
 		place.appendChild(elem);
 	}
