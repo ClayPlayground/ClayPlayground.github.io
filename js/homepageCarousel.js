@@ -8,12 +8,14 @@ var ajaxRequest = new XMLHttpRequest();
 				//turn JSON into object
 				var jsonObj = JSON.parse(ajaxRequest.responseText);
 
-                place = document.getElementById("crlInner");
-                indPlace = document.getElementById("indInner");
+                let place = document.getElementById("crlInner");
+                let indPlace = document.getElementById("indInner");
+                let index = 0;
                 for (var i = 0; i < jsonObj.imgSet.length; i++){
                     if (jsonObj.imgSet[i].homepage == true){
                         CreateAndAppend(place, jsonObj.imgSet[i]);
-                        CreateAndAppendIndicator(indPlace, jsonObj.imgSet[i])
+                        CreateAndAppendIndicator(indPlace, index);
+                        index++;
                     }
 				}
                 SetActiveClass(place, indPlace);
@@ -54,8 +56,11 @@ var ajaxRequest = new XMLHttpRequest();
 
     function SetActiveClass(place, indPlace){
         let element = place.firstElementChild;
+        console.log("place.firstelement: "+place.firstElementChild);
         element.classList.add("active");
 
         let indElement = indPlace.firstElementChild;
+        console.log("place.firstelement: "+inPlace.firstElementChild);
+
         indElement.classList.add("active");
     }
