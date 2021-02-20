@@ -1,10 +1,10 @@
-var ajaxRequest2 = new XMLHttpRequest();
+var ajaxReq = new XMLHttpRequest();
 
-	ajaxRequest2.onreadystatechange = function(){
+	ajaxReq.onreadystatechange = function(){
 	
-		if(ajaxRequest2.readyState == 4){
+		if(ajaxReq.readyState == 4){
 			//the request is completed, now check its status
-			if(ajaxRequest2.status == 200){
+			if(ajaxReq.status == 200){
 				//turn JSON into object
 				var jsonObj = JSON.parse(ajaxRequest.responseText);
 
@@ -26,8 +26,8 @@ var ajaxRequest2 = new XMLHttpRequest();
 	
 	}
 	
-	ajaxRequest2.open('GET', 'https://clayplayground.github.io/resources/imageSet.json');
-	ajaxRequest2.send();
+	ajaxReq.open('GET', 'https://clayplayground.github.io/resources/imageSet.json');
+	ajaxReq.send();
 
 	
 
