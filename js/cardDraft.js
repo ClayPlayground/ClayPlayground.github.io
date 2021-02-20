@@ -45,6 +45,6 @@ var ajaxRequest = new XMLHttpRequest();
 		elem.classList.add("card");
 		elem.classList.add("cardCustom");
 		elem.style("width", "18rem");
-
+		console.log("why?");
 		pl.appendChild(elem);
 	}
