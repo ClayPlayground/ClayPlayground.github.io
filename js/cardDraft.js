@@ -18,7 +18,6 @@ var ajaxRequest = new XMLHttpRequest();
 					}
 				}
 				
-				Build(jsonObj.imgSet[i], place);
 			}
 			else{
 				console.log("Status error: " + ajaxRequest.status);
