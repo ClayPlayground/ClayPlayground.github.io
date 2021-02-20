@@ -17,7 +17,7 @@ var ajaxRequest = new XMLHttpRequest();
 					if (place.dataset.currentfiles == jsonObj.imgSet[i].categoria)
 					{
 					console.log(jsonObj.imgSet[i]);
-					BuildDiv(jsonObj.imgSet[i], place, i);
+					Build(jsonObj.imgSet[i], place, i);
 					BuildGalleryDiv(jsonObj.imgSet[i], galleryPlace, i);
 					}
 				}
@@ -39,23 +39,7 @@ var ajaxRequest = new XMLHttpRequest();
 	ajaxRequest.open('GET', 'https://clayplayground.github.io/resources/imageSet.json');
 	ajaxRequest.send();
 
-	function BuildDiv(objSet, place, number){
-		let element = [document.createElement("div")];
-		element.innerHTML = `
-		<div class="card cardCustom" style="width: 18rem;">
-			<img class="card-img-top cardImg btnAble" src="resources/${objSet.nomeFile}" alt="${objSet.titolo}">
-			<div class="card-body">
-				<h2 class="cardTitle">${objSet.titolo}
-				</h2>
-				<p class="card-text">${objSet.BreveDescrizione}</p>
-			</div>
-		</div>
-		`;
-		console.log("element inner is "+element.innerHTML);
-		console.log("place is "+place);
-		place.appendChild(element[0]);
-		console.log("appended");
-	}
+	
 
 	function BuildGalleryDiv(objSet, place, number){
 		let element = document.createElement("div");
@@ -73,4 +57,17 @@ var ajaxRequest = new XMLHttpRequest();
 		}
 
 		place.appendChild(element);
+	}
+	
+	function Build(objSet, place, number){
+		let element = [document.createElement("div")];
+		element.innerHTML = `<div class="card cardCustom" style="width: 18rem;">
+			<img class="card-img-top cardImg btnAble" src="resources/${objSet.nomeFile}" alt="${objSet.titolo}">
+			<div class="card-body">
+				<h2 class="cardTitle">${objSet.titolo}
+				</h2>
+				<p class="card-text">${objSet.BreveDescrizione}</p>
+			</div>
+		</div>`;
+		place.appendChild(element[0]);
 	}
