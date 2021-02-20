@@ -9,19 +9,26 @@
     <link rel="stylesheet" href="css\customStyle.css">
 </head>
 <body>
-    <div class="panel">
-            <div id = "galleryPlace" class="carousel-inner">
+    <div id="panel" class="panel deactivated">
+
+        <div id="escBtn" class="escBtn carousel-control-prev-icon"></div>
+        <div id="popUpCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div id = "galleryPlace" class="carousel-inner innerCustom">
             </div>
-            <a class="carousel-control-prev" href="#carouselsIndicat" role="button" data-slide="prev">
+
+            <a class="carousel-control-prev" href="#popUpCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselsIndicat" role="button" data-slide="next">
+
+            <a class="carousel-control-next" href="#popUpCarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
             </a>
         </div>
     </div>
+
+   
     <nav class="navbar navbar-dark bg-dark clearfix navStyle">
         <div class="container-fluid">            
             <a class="navbar-brand" href="#"><img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="LOGO" width="50" height="50" class="d-inline-block align-top"> 
@@ -29,17 +36,8 @@
             <a class="contacts" href="contacts.html">Contacts</a>
         </div>
     </nav>
+
     <div id="cardsBody" class="cardsBody">
-        <div class="card cardCustom" style="width: 18rem;">
-            <img class="card-img-top cardImg" src="resources/firstStar.svg" alt="${objSet.titolo}">
-            <div class="card-body">
-                <h2 class="cardTitle">Titolone
-                </h2>
-                <p class="card-text">BreveDescrizione</p>
-            </div>
-        </div>
-
-
     </div>
     
 <div class="container-fluid footer">
@@ -50,6 +48,7 @@
 
 <script src="dist\jquery.min.js"></script>
 <script src="dist\bootstrap.min.js"></script>
+<script src="js/popUpCarouselProvvisorio.js"></script>
 <script src="js\cardDrafter.js"></script>
 </body>
 </html>
