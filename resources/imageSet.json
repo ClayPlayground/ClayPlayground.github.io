@@ -3,14 +3,14 @@
 		"titolo": "La mia stella ", 
 		"nomeFile": "firstStar.svg", 
 		"BreveDescrizione" : "BreveDescrizione non degna di nota",
-		"categoria" : "foto", "homepage":"false"
+		"categoria" : "logo", "homepage":"false"
 	},
 
 	{
 		"titolo": "il mio logo di chiron's cave", 
 		"nomeFile": "CCLogoSVG.svg", 
 		"BreveDescrizione" : "sono la seconda immagine" , 
-		"categoria" : "foto", 
+		"categoria" : "logo", 
 		"homepage":"true"
 	},
 
