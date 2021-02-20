@@ -13,7 +13,7 @@ var ajaxRequest = new XMLHttpRequest();
                 let index = 0;
                 for (var i = 0; i < jsonObj.imgSet.length; i++){
                     console.log("is json true? "+jsonObj.imgSet[i].homepage)
-                    if (jsonObj.imgSet[i].homepage){
+                    if (jsonObj.imgSet[i].homepage ===true){
                         console.log("json is "+jsonObj.imgSet[i].homepage)
                         console.log("place is "+place);
                         CreateAndAppend(place, jsonObj.imgSet[i]);
