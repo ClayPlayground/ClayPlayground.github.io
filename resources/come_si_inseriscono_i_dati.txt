@@ -7,7 +7,7 @@ il file imageSet.json lo puoi aprire con il blocco note senza problemi
     "titolo": "Titolodellafoto", 
     "nomeFile": "disegno.svg", 
     "BreveDescrizione" : "Sono massimo una riga di testo, meglio una frase sola", 
-    "categoria" : "foto", 
+    "categoria" : "1", 
     "homepage":"false"
     },                   //RICORDATI LA VIRGOLA TRA UN OGGETTO E L'ALTRO
 
@@ -15,7 +15,7 @@ il file imageSet.json lo puoi aprire con il blocco note senza problemi
      "titolo": "LogoStiloso",
      "nomeFile": "LogoSVG.svg",                        //deve essere lo stesso nome che ha la foto che carichi in questa cartella
      "BreveDescrizione" : "Il mio logo di stile" ,    //deve essere una frase per non rompere il resto dell'impaginazione
-     "categoria" : "logo",                           // le categorie sono tre: logo, foto e disegno: fanno apparire le immagini nella pagina corretta
+     "categoria" : "3",                           // le categorie: 1=logo, 2=foto e 3=disegno: fanno apparire le immagini nella pagina corretta
      "homepage":"false"                             // se "true" l'immagine viene visualizzata anche nell'homepage: almeno una immagine deve essere TRUE   
      }                  //alla fine non ci va la virgola          
 

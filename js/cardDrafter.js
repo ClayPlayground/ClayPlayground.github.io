@@ -14,7 +14,7 @@ var ajaxRequest = new XMLHttpRequest();
 				for (var i = 0; i < jsonObj.imgSet.length; i++){
 					console.log("pagina: "+place.dataset.currentfiles);
 					console.log("json: "+jsonObj.imgSet[i].categoria)
-					if ((place.dataset.currentfiles.toString() == jsonObj.imgSet[i].categoria.toString()))
+					if (place.dataset.currentfiles == jsonObj.imgSet[i].categoria)
 					{
 					console.log(jsonObj.imgSet[i]);
 					BuildDiv(jsonObj.imgSet[i], place);

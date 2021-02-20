@@ -3,7 +3,7 @@
 		"titolo": "La mia stella ", 
 		"nomeFile": "firstStar.svg", 
 		"BreveDescrizione" : "BreveDescrizione non degna di nota",
-		"categoria" : "logo", 
+		"categoria" : "1", 
 		"homepage":"0"
 	},
 
@@ -11,7 +11,7 @@
 		"titolo": "il mio logo di chiron's cave", 
 		"nomeFile": "CCLogoSVG.svg", 
 		"BreveDescrizione" : "sono la seconda immagine" , 
-		"categoria" : "logo", 
+		"categoria" : "1", 
 		"homepage":"1"
 	},
 
@@ -19,7 +19,7 @@
 		"titolo": "un'altra costellazione", 
 		"nomeFile": "firstStar.svg", 
 		"BreveDescrizione" : "io invece presento la terza possibilità", 
-		"categoria" : "foto", 
+		"categoria" : "2", 
 		"homepage":"1"
 	}
 
