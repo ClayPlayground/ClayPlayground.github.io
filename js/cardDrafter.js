@@ -8,10 +8,10 @@ var ajaxRequest = new XMLHttpRequest();
 				//turn JSON into object
 				var jsonObj = JSON.parse(ajaxRequest.responseText);
 
-				var place = document.getElementById("cardsBody");
-				var galleryPlace = document.getElementById("galleryPlace");
+				let place = document.getElementById("cardsBody");
+				let galleryPlace = document.getElementById("galleryPlace");
 
-				for (var i = 0; i < jsonObj.imgSet.length; i++){
+				for (let i = 0; i < jsonObj.imgSet.length; i++){
 					console.log("pagina: "+place.dataset.currentfiles);
 					console.log("json: "+jsonObj.imgSet[i].categoria)
 					if (place.dataset.currentfiles == jsonObj.imgSet[i].categoria)
