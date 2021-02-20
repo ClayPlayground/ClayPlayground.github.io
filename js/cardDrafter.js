@@ -51,9 +51,10 @@ var ajaxRequest = new XMLHttpRequest();
 			</div>
 		</div>`;
 		console.log("element is "+element);
-		console.log("place is "+place)
+		console.log("place is "+place);
 		place.appendChild(element);
 	}
+
 	function BuildGalleryDiv(objSet, place, number){
 		let element = document.createElement("div");
 		element.innerHTML = `
