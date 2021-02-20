@@ -21,16 +21,6 @@ var ajaxRequest = new XMLHttpRequest();
                         //CreateAndAppendIndicator(indPlace, index);
                     }
 				}
-
-
-                const galleryPlace = document.getElementById("galleryPlace");
-
-				for (let i = 0; i < jsonObj.imgSet.length; i++){
-					if (jsonObj.imgSet[i].categoria == 1)
-					{
-					BuildGalleryDiv(jsonObj.imgSet[i], galleryPlace, i);
-					}
-				}
                 //SetActiveClass(place, indPlace);
 			}
 			else{
@@ -82,21 +72,3 @@ var ajaxRequest = new XMLHttpRequest();
 
         indElement.classList.add("active");
     }
-    function BuildGalleryDiv(objSet, place, number){
-		let element = document.createElement("div");
-		element.innerHTML = `
-		<img class="d-block carolImage carolImageCustom" src="resources/${objSet.nomeFile}" alt="${objSet.titolo}">
-		<div class="carousel-caption d-none d-md-block">
-			<h5>${objSet.titolo}</h5>
-			<p>${objSet.BreveDescrizione}</p>
-			</div>
-		`;
-		element.classList.add("carousel-item")
-		element.classList.add("carolImageContainer")
-		if (number == 0){
-			element.classList.add("active");
-		}
-
-		document.getElementById("galleryPlace").appendChild(element);
-		place.appendChild(element);
-	}
