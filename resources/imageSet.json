@@ -3,7 +3,7 @@
 		"titolo": "La mia stella ", 
 		"nomeFile": "firstStar.svg", 
 		"BreveDescrizione" : "BreveDescrizione non degna di nota",
-		"categoria" : "1", 
+		"categoria" : "3", 
 		"homepage":"0"
 	},
 
@@ -19,7 +19,7 @@
 		"titolo": "un'altra costellazione", 
 		"nomeFile": "firstStar.svg", 
 		"BreveDescrizione" : "io invece presento la terza possibilità", 
-		"categoria" : "2", 
+		"categoria" : "1", 
 		"homepage":"1"
 	}
 
