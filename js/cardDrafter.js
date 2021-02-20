@@ -54,7 +54,7 @@ var ajaxRequest = new XMLHttpRequest();
 		console.log("element inner is "+element.innerHTML);
 		console.log("place is "+place);
 		place.appendChild(element);
-		place.appendChild(element.innerHTML);
+		console.log("appended");
 	}
 
 	function BuildGalleryDiv(objSet, place, number){
