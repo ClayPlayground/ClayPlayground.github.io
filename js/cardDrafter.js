@@ -52,7 +52,7 @@ var ajaxRequest = new XMLHttpRequest();
 			element.classList.add("active");
 		}
 
-		//place.appendChild(element);
+		document.getElementById("cardsBody").append(element);
 		place.appendChild(element);
 	}
 	
