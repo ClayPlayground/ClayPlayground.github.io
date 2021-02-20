@@ -49,17 +49,9 @@ var ajaxRequest = new XMLHttpRequest();
 				</h2>
 				<p class="card-text">${objSet.BreveDescrizione}</p>
 			</div>
-		</div>`;
-		console.log(`
-		<div class="card cardCustom" style="width: 18rem;">
-			<img class="card-img-top cardImg btnAble" src="resources/${objSet.nomeFile}" alt="${objSet.titolo}">
-			<div class="card-body">
-				<h2 class="cardTitle">${objSet.titolo}
-				</h2>
-				<p class="card-text">${objSet.BreveDescrizione}</p>
-			</div>
-		</div>`);
-		console.log("element is "+element);
+		</div>
+		`;
+		console.log("element inner is "+element.innerHTML);
 		console.log("place is "+place);
 		place.appendChild(element);
 	}
