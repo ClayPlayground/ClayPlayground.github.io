@@ -1,5 +1,25 @@
 {"imgSet": [
-	{"titolo": "La mia stella ", "nomeFile": "firstStar.svg", "BreveDescrizione" : "BreveDescrizione non degna di nota", "categoria" : "foto", "homepage":"false"},
-	{"titolo": "il mio logo di chiron's cave", "nomeFile": "CCLogoSVG.svg", "BreveDescrizione" : "sono la seconda immagine" , "categoria" : "foto", "homepage":"false"},
-	{"titolo": "un'altra costellazione", "nomeFile": "firstStar.svg", "BreveDescrizione" : "io invece presento la terza possibilità", "categoria" : "foto", "homepage":"false"}
+	{
+		"titolo": "La mia stella ", 
+		"nomeFile": "firstStar.svg", 
+		"BreveDescrizione" : "BreveDescrizione non degna di nota",
+		"categoria" : "foto", "homepage":"false"
+	},
+
+	{
+		"titolo": "il mio logo di chiron's cave", 
+		"nomeFile": "CCLogoSVG.svg", 
+		"BreveDescrizione" : "sono la seconda immagine" , 
+		"categoria" : "foto", 
+		"homepage":"false"
+	},
+
+	{
+		"titolo": "un'altra costellazione", 
+		"nomeFile": "firstStar.svg", 
+		"BreveDescrizione" : "io invece presento la terza possibilità", 
+		"categoria" : "foto", 
+		"homepage":"false"
+	}
+	
 ]}
