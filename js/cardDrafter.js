@@ -8,20 +8,23 @@ var ajaxRequest = new XMLHttpRequest();
 				//turn JSON into object
 				var jsonObj = JSON.parse(ajaxRequest.responseText);
 
+				const place = document.getElementById("cardsBody");
 				const galleryPlace = document.getElementById("galleryPlace");
-				const pageIndex =document.getElementById("cardsBody").dataset.currentfile;
+				const pageIndex =place.dataset.currentfile;
 				for (let i = 0; i < jsonObj.imgSet.length; i++){
 					if (pageIndex == jsonObj.imgSet[i].categoria)
 					{
+					Build(jsonObj.imgSet[i], place);
 					BuildGalleryDiv(jsonObj.imgSet[i], galleryPlace, i);
 					}
 				}
-			}
-			else{
+				if (place.innerHTML=""){
+					place.innerHtml="Nulla da vedere";
+				}
+			}else{
 				console.log("Status error: " + ajaxRequest.status);
 			}
-		}
-		else{
+		}else{
 			console.log("Ignored readyState: " + ajaxRequest.readyState);
 		}
 	
@@ -52,7 +55,22 @@ var ajaxRequest = new XMLHttpRequest();
 		Appender(place, element);
 	}
 	
-	
+	function Build(objSet, place){
+		let elem = document.createElement("div");
+		elem.innerHTML = `
+			<img class="card-img-top cardImg btnAble" src="resources/${objSet.nomeFile}" alt="${objSet.titolo}">
+			<div class="card-body">
+				<h2 class="cardTitle">${objSet.titolo}
+				</h2>
+				<p class="card-text">${objSet.BreveDescrizione}</p>
+			</div>`;
+		elem.classList.add("card");
+		elem.classList.add("cardCustom");
+		elem.style("width", "18rem");
+
+		place.appendChild(elem);
+		Appender(place, elem)
+	}
 
 	function Appender(x, y){
         x.appendChild(y);
