@@ -10,15 +10,14 @@ var ajaxRequest = new XMLHttpRequest();
 
                 let place = document.getElementById("cardsBody");
                 //let indPlace = document.getElementById("indInner");
-                let index = 0;
+                let index = place.dataset.currentFiles;
                 for (var i = 0; i < jsonObj.imgSet.length; i++){
                     console.log("is json true? "+jsonObj.imgSet[i].homepage)
-                    if (jsonObj.imgSet[i].homepage == 1){
+                    if (jsonObj.imgSet[i].categoria == index){
                         console.log("json is "+jsonObj.imgSet[i].homepage)
                         console.log("place is "+place);
                         CreateAndAppend(place, jsonObj.imgSet[i]);
                         //CreateAndAppendIndicator(indPlace, index);
-                        index++;
                     }
 				}
                 //SetActiveClass(place, indPlace);
@@ -41,7 +40,7 @@ var ajaxRequest = new XMLHttpRequest();
 
         let element = document.createElement("div");
             element.innerHTML = 
-           `<img class="card-img-top cardImg btnAble" src="resources/${obj.nomeFile}" alt="${obj.titolo}">
+           `<img class="card-img-top cardImg btnAble" width="100" src="resources/${obj.nomeFile}" alt="${obj.titolo}">
            <div class="card-body">
                <h2 class="cardTitle">${obj.titolo}
                </h2>
