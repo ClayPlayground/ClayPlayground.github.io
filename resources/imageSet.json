@@ -11,7 +11,7 @@
 		"nomeFile": "CCLogoSVG.svg", 
 		"BreveDescrizione" : "sono la seconda immagine" , 
 		"categoria" : "foto", 
-		"homepage":"false"
+		"homepage":"true"
 	},
 
 	{
@@ -19,7 +19,7 @@
 		"nomeFile": "firstStar.svg", 
 		"BreveDescrizione" : "io invece presento la terza possibilità", 
 		"categoria" : "foto", 
-		"homepage":"false"
+		"homepage":"true"
 	}
-	
+
 ]}
