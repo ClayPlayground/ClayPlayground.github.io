@@ -10,13 +10,11 @@ var ajaxRequest = new XMLHttpRequest();
 
                 let place = document.getElementById("cardsBody");
                 //let indPlace = document.getElementById("indInner");
-                let index = place.dataset.currentFiles;
-console.log("dataset equals "+index);
                 for (var i = 0; i < jsonObj.imgSet.length; i++){
                     console.log("is json true? "+jsonObj.imgSet[i].homepage)
 
 
-                    if (jsonObj.imgSet[i].categoria == index){
+                    if (jsonObj.imgSet[i].categoria == 1){
                         console.log("json is "+jsonObj.imgSet[i].homepage)
                         console.log("place is "+place);
                         CreateAndAppend(place, jsonObj.imgSet[i]);
