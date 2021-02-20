@@ -40,7 +40,7 @@ var ajaxRequest = new XMLHttpRequest();
 	ajaxRequest.send();
 
 	function BuildDiv(objSet, place, number){
-		let element = document.createElement("div");
+		let element = [document.createElement("div")];
 		element.innerHTML = `
 		<div class="card cardCustom" style="width: 18rem;">
 			<img class="card-img-top cardImg btnAble" src="resources/${objSet.nomeFile}" alt="${objSet.titolo}">
@@ -53,8 +53,7 @@ var ajaxRequest = new XMLHttpRequest();
 		`;
 		console.log("element inner is "+element.innerHTML);
 		console.log("place is "+place);
-		place.appendChild(element);
-		place.appendChild(element.nodeValue);
+		place.appendChild(element[0]);
 		console.log("appended");
 	}
 
