@@ -17,7 +17,7 @@ var ajaxRequest = new XMLHttpRequest();
 					if (place.dataset.currentfiles == jsonObj.imgSet[i].categoria)
 					{
 					console.log(jsonObj.imgSet[i]);
-					BuildDiv(jsonObj.imgSet[i], place);
+					BuildDiv(jsonObj.imgSet[i], place, i);
 					BuildGalleryDiv(jsonObj.imgSet[i], galleryPlace, i);
 					}
 				}
@@ -39,7 +39,7 @@ var ajaxRequest = new XMLHttpRequest();
 	ajaxRequest.open('GET', 'https://clayplayground.github.io/resources/imageSet.json');
 	ajaxRequest.send();
 
-	function BuildDiv(objSet, place){
+	function BuildDiv(objSet, place, number){
 		let element = document.createElement("div");
 		element.innerHTML = `
 		<div class="card cardCustom" style="width: 18rem;">
