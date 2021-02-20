@@ -9,6 +9,7 @@ var ajaxRequest = new XMLHttpRequest();
 				var jsonObj = JSON.parse(ajaxRequest.responseText);
 
 				let galleryPlace = document.getElementById("galleryPlace");
+				let pageIndex =place.dataset.currentfile;
 				for (let i = 0; i < jsonObj.imgSet.length; i++){
 					if (pageIndex == jsonObj.imgSet[i].categoria)
 					{
