@@ -12,7 +12,9 @@ var ajaxRequest = new XMLHttpRequest();
 				var galleryPlace = document.getElementById("galleryPlace");
 
 				for (var i = 0; i < jsonObj.imgSet.length; i++){
-					if (place.dataset.currentFiles == jsonObj.imgSet[i].categoria)
+					console.log("pagina: "+place.dataset.currentfiles);
+					console.log("json: "+jsonObj.imgSet[i].categoria)
+					if (place.dataset.currentfiles == jsonObj.imgSet[i].categoria)
 					{
 					console.log(jsonObj.imgSet[i]);
 					BuildDiv(jsonObj.imgSet[i], place);
