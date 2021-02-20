@@ -10,10 +10,9 @@ var ajaxRequest = new XMLHttpRequest();
 
 				let place = document.getElementById("cardsBody");
 				let galleryPlace = document.getElementById("galleryPlace");
-				let pageIndex =place.dataset.currentfile;
 					Build(jsonObj.imgSet[i], place);
 					BuildGalleryDiv(jsonObj.imgSet[i], galleryPlace, i);
-					
+			}
 			else{
 				console.log("Status error: " + ajaxRequest.status);
 			}
