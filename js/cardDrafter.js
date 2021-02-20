@@ -21,6 +21,9 @@ var ajaxRequest = new XMLHttpRequest();
 					BuildGalleryDiv(jsonObj.imgSet[i], galleryPlace, i);
 					}
 				}
+				if (place.innerHTML=""){
+					place.innerHtml="Nulla da vedere";
+				}
 			}
 			else{
 				console.log("Status error: " + ajaxRequest.status);
