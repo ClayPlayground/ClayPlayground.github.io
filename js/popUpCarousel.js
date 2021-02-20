@@ -17,6 +17,7 @@ $(document).ready(function(){
             let pan = document.getElementById("panel");
             let cards = Array.from(document.getElementsByClassName("btnAble"));
             for (let i = 0; i < cards.length; i++ ){
+                console.log("added event listener to "+cards[i]);
                 cards[i].addEventListener("click", (e)=>{
                     ActivatePanel(i);
                 })
