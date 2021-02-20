@@ -10,14 +10,11 @@ var ajaxRequest = new XMLHttpRequest();
 
 				let place = document.getElementById("cardsBody");
 				let galleryPlace = document.getElementById("galleryPlace");
-
+				let pageIndex =place.dataset.currentfile;
 				for (let i = 0; i < jsonObj.imgSet.length; i++){
-					console.log("pagina: "+place.dataset.currentfiles);
-					console.log("json: "+jsonObj.imgSet[i].categoria)
-					if (place.dataset.currentfiles == jsonObj.imgSet[i].categoria)
+					if (pageIndex == jsonObj.imgSet[i].categoria)
 					{
-					console.log(jsonObj.imgSet[i]);
-					Build(jsonObj.imgSet[i], place, i);
+					Build(jsonObj.imgSet[i], place);
 					BuildGalleryDiv(jsonObj.imgSet[i], galleryPlace, i);
 					}
 				}
@@ -60,16 +57,19 @@ var ajaxRequest = new XMLHttpRequest();
 		Appender(place, element);
 	}
 	
-	function Build(objSet, place, number){
+	function Build(objSet, place){
 		let elem = document.createElement("div");
-		elem.innerHTML = `<div class="card cardCustom" style="width: 18rem;">
+		elem.innerHTML = `
 			<img class="card-img-top cardImg btnAble" src="resources/${objSet.nomeFile}" alt="${objSet.titolo}">
 			<div class="card-body">
 				<h2 class="cardTitle">${objSet.titolo}
 				</h2>
 				<p class="card-text">${objSet.BreveDescrizione}</p>
-			</div>
-		</div>`;
+			</div>`;
+		elem.classList.add("card");
+		elem.classList.add("cardCustom");
+		elem.style("width", "18rem");
+
 		//place.appendChild(elem);
 		Appender(place, elem)
 	}
