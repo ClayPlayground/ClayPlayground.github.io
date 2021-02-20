@@ -70,7 +70,7 @@ var ajaxRequest = new XMLHttpRequest();
 		elem.classList.add("cardCustom");
 		elem.style("width", "18rem");
 
-		//place.appendChild(elem);
+		place.appendChild(elem);
 		Appender(place, elem)
 	}
 
