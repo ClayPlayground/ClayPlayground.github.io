@@ -34,6 +34,7 @@ $(document).ready(function(){
 					}
 				}
                 //SetActiveClass(place, indPlace);
+                EventDrafter();
                 
 			}
 			else{
@@ -68,7 +69,7 @@ $(document).ready(function(){
             place.appendChild(element);
     
     }
-    
+
     function CreateAndAppendIndicator(place, index){
         let element = document.createElement("li");
         element.dataset.target ="#homePageCarousel";
@@ -122,7 +123,7 @@ $(document).ready(function(){
         let cards = Array.from(document.getElementsByClassName("btnAble"));
         for (let i = 0; i < cards.length; i++ ){
             console.log("added event listener to "+cards[i]);
-            cards[i].addEventListener("click", (e)=>{
+            cards[i].addEventListener("click", ()=>{
                 ActivatePanel(i);
             })
         }
