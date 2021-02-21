@@ -30,6 +30,10 @@ h2{
 .contacts{
     float: right;
 }
+.contactsLow{
+    display: none;
+    font-size: 3vh;
+}
 .carolImageContain{
     padding: 10px 0;
     height: 80vh;
