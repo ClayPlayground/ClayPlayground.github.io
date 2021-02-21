@@ -61,10 +61,13 @@ h2{
     .footer{
         flex-flow: column nowrap;
     }
+    .cardCustom{
+        width: auto;
+    }
+    .carolImageHome{
+        height: 80vh;
+    }
 } 
-.carolImageHome{
-    height: 80vh;
-}
 .footer{
     position: relative;
     height: 10vh;
