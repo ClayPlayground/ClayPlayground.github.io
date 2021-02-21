@@ -130,12 +130,17 @@ h2{
     text-align: center;
     font-size: 100%;
 }
-.contactBody{
+.contactsBody{
     height: 80vh;
     text-align: center;
 }
 .contactsList{
+    width: fit-content;
+    height: fit-content;
     margin: auto;
+}
+.developer{
+    font-size: 2vh;
 }
 ul li{
     margin-top: 30px;
@@ -146,6 +151,13 @@ ul li{
         height: auto;
         width: 100%;
         margin: auto 0;
+    }
+    .carolImageCustom{
+        margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
     }
     .contacts{
         display: none;

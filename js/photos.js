@@ -16,7 +16,7 @@ $(document).ready(function(){
                     console.log("is json true? "+jsonObj.imgSet[i].homepage)
 
 
-                    if (jsonObj.imgSet[i].categoria == 2){
+                    if (jsonObj.imgSet[i].categoria == 3){
                         console.log("json is "+jsonObj.imgSet[i].homepage)
                         console.log("place is "+place);
                         CreateAndAppend(place, jsonObj.imgSet[i]);
@@ -28,7 +28,7 @@ $(document).ready(function(){
                 const galleryPlace = document.getElementById("galleryPlace");
 
 				for (let i = 0; i < jsonObj.imgSet.length; i++){
-					if (jsonObj.imgSet[i].categoria == 2)
+					if (jsonObj.imgSet[i].categoria == 3)
 					{
 					BuildGalleryDiv(jsonObj.imgSet[i], galleryPlace, i);
 					}
