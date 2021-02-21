@@ -68,6 +68,7 @@ $(document).ready(function(){
             place.appendChild(element);
     
     }
+    
     function CreateAndAppendIndicator(place, index){
         let element = document.createElement("li");
         element.dataset.target ="#homePageCarousel";
@@ -85,6 +86,7 @@ $(document).ready(function(){
 
         indElement.classList.add("active");
     }
+
     function BuildGalleryDiv(objSet, place, number){
 		let element = document.createElement("div");
 		element.innerHTML = `
@@ -103,5 +105,30 @@ $(document).ready(function(){
 		document.getElementById("galleryPlace").appendChild(element);
 		place.appendChild(element);
 	}
+
+    function ActivatePanel(number){ 
+        var pann = document.getElementById("panel");
+        pann.classList.remove("deactivated");
+        
+        $("#popUpCarousel").carousel(number);
+    }
+
+    function DeactivatePanel(panel){
+    panel.classList.add("deactivated");
+    }
+
+    function EventDrafter(){
+        let pan = document.getElementById("panel");
+        let cards = Array.from(document.getElementsByClassName("btnAble"));
+        for (let i = 0; i < cards.length; i++ ){
+            console.log("added event listener to "+cards[i]);
+            cards[i].addEventListener("click", (e)=>{
+                ActivatePanel(i);
+            })
+        }
+        document.getElementById("escBtn").addEventListener("click", function(){
+            DeactivatePanel(pan);
+        });
+    }          
 }
 );
