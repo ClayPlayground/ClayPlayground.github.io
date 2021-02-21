@@ -177,4 +177,7 @@ ul li{
     .carolImageHome{
         height: 80vh;
     }
+    .titoloEdescrizione{
+        transform: translateY(0%);
+    }
 } 
