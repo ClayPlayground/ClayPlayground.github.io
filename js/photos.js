@@ -28,7 +28,7 @@ $(document).ready(function(){
                 const galleryPlace = document.getElementById("galleryPlace");
 
 				for (let i = 0; i < jsonObj.imgSet.length; i++){
-					if (jsonObj.imgSet[i].categoria == 1)
+					if (jsonObj.imgSet[i].categoria == 2)
 					{
 					BuildGalleryDiv(jsonObj.imgSet[i], galleryPlace, i);
 					}
