@@ -3,23 +3,64 @@
 		"titolo": "La mia stella ", 
 		"nomeFile": "firstStar.svg", 
 		"BreveDescrizione" : "BreveDescrizione non degna di nota",
-		"categoria" : "3", 
+		"categoria" : "2", 
 		"homepage":"0"
 	},
 
 	{
 		"titolo": "il mio logo di chiron's cave", 
 		"nomeFile": "CCLogoSVG.svg", 
-		"BreveDescrizione" : "sono la seconda immagine" , 
+		"BreveDescrizione" : "sono stato riprodotto da Andrea" , 
 		"categoria" : "1", 
 		"homepage":"1"
 	},
-
-	{
-		"titolo": "un'altra costellazione", 
-		"nomeFile": "firstStar.svg", 
-		"BreveDescrizione" : "io invece presento la terza possibilità", 
+        {
+		"titolo": "un bambino in fasce", 
+		"nomeFile": "baby.png", 
+		"BreveDescrizione" : "Logo trovato da un sito bello" , 
 		"categoria" : "1", 
+		"homepage":"0"
+	},
+        {
+		"titolo": "GERRY", 
+		"nomeFile": "gerry.png", 
+		"BreveDescrizione" : "è proprio lui" , 
+		"categoria" : "3", 
+		"homepage":"0"
+	},
+        {
+		"titolo": "La casa tradizionale", 
+		"nomeFile": "home(1).png", 
+		"BreveDescrizione" : "sono proprio un esempio di logo" , 
+		"categoria" : "1", 
+		"homepage":"0"
+	},
+        {
+		"titolo": "JEAN-PAUL", 
+		"nomeFile": "sartre-autor.png", 
+		"BreveDescrizione" : "è proprio l'altro" , 
+		"categoria" : "3", 
+		"homepage":"0"
+	},
+        {
+		"titolo": "RI-JEAN-PAUL", 
+		"nomeFile": "sartre-fuma-sempre.png", 
+		"BreveDescrizione" : "è proprio ancora lui" , 
+		"categoria" : "3", 
+		"homepage":"0"
+	},
+        {
+		"titolo": "hotel", 
+		"nomeFile": "gerry.png", 
+		"BreveDescrizione" : "questo non l'ho disegnato, ma mi piace qua" , 
+		"categoria" : "2", 
+		"homepage":"1"
+	},
+	{
+		"titolo": "Voli pindarici", 
+		"nomeFile": "anatra.png", 
+		"BreveDescrizione" : "l'ho disegnata io personalmente", 
+		"categoria" : "2", 
 		"homepage":"1"
 	}
 
