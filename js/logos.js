@@ -33,7 +33,7 @@ $(document).ready(function(){
 					BuildGalleryDiv(jsonObj.imgSet[i], galleryPlace, i);
 					}
 				}
-                SetActiveClass(place, indPlace);
+                //SetActiveClass(place, indPlace);
                 EventDrafter();
                 
 			}
@@ -105,6 +105,7 @@ $(document).ready(function(){
 
 		document.getElementById("galleryPlace").appendChild(element);
 		place.appendChild(element);
+        document.getElementById("galleryPlace").firstElementChild.classList.add("active");
 	}
 
     function ActivatePanel(number){ 
