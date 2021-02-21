@@ -76,7 +76,7 @@ h2{
 .cardCustom{
     margin: 15px;
     height: max-content;
-    width: 18%;
+    width: 300px;
     border: 1px solid #333;
 }
 .cardImg{
@@ -129,6 +129,16 @@ h2{
     cursor:pointer;
     text-align: center;
     font-size: 100%;
+}
+.contactBody{
+    height: 80vh;
+    text-align: center;
+}
+.contactsList{
+    margin: auto;
+}
+ul li{
+    margin-top: 30px;
 }
 
 @media only screen and (max-width: 600px) {
