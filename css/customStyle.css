@@ -45,29 +45,6 @@ h2{
     display: block;
     margin: 0 auto;
 }
-@media only screen and (max-width: 600px) {
-    .carolImage{
-        height: auto;
-        width: 100%;
-        margin: auto 0;
-    }
-    .contacts{
-        display: none;
-    }
-    .contactsLow{
-        display: block;
-        font-size: 3vh;
-    }
-    .footer{
-        flex-flow: column nowrap;
-    }
-    .cardCustom{
-        width: auto;
-    }
-    .carolImageHome{
-        height: 80vh;
-    }
-} 
 .footer{
     position: relative;
     height: 10vh;
@@ -153,3 +130,27 @@ h2{
     text-align: center;
     font-size: 100%;
 }
+
+@media only screen and (min-width: 600px) {
+    .carolImage{
+        height: auto;
+        width: 100%;
+        margin: auto 0;
+    }
+    .contacts{
+        display: none;
+    }
+    .contactsLow{
+        display: block;
+        font-size: 3vh;
+    }
+    .footer{
+        flex-flow: column nowrap;
+    }
+    .cardCustom{
+        width: auto;
+    }
+    .carolImageHome{
+        height: 80vh;
+    }
+} 
