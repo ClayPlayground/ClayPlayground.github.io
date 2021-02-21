@@ -33,7 +33,7 @@ $(document).ready(function(){
 					BuildGalleryDiv(jsonObj.imgSet[i], galleryPlace, i);
 					}
 				}
-                //SetActiveClass(place, indPlace);
+                SetActiveClass(place, indPlace);
                 EventDrafter();
                 
 			}
