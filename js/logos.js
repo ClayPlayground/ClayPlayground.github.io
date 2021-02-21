@@ -98,7 +98,7 @@ $(document).ready(function(){
 			</div>
 		`;
 		element.classList.add("carousel-item")
-		element.classList.add("carolImageContainer")
+		element.classList.add("carolImageContain")
 		if (number == 0){
 			element.classList.add("active");
 		}

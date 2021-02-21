@@ -85,7 +85,7 @@ h2{
 .panel{
     position:fixed;
     height: 100vh;
-    width: auto;
+    width: 100%;
     background-color: rgba(32, 32, 32, 0.99);
     z-index: 10;
 }
@@ -98,7 +98,7 @@ h2{
     
 }
 .titoloEdescrizione{
-    transform: translateY(10%);
+    transform: translateY(20%);
 }
 .deactivated{
     display: none;
