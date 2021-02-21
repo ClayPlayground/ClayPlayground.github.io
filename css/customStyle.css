@@ -53,6 +53,7 @@ h2{
 }
 .footItem{
     margin: 10px 20px;
+    font-size: 4vh;
 }
 .cardsBody{
     position: relative;
