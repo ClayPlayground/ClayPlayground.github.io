@@ -92,7 +92,7 @@ $(document).ready(function(){
 		let element = document.createElement("div");
 		element.innerHTML = `
 		<img class="d-block carolImage carolImageCustom" src="resources/${objSet.nomeFile}" alt="${objSet.titolo}">
-		<div class="carousel-caption d-none d-md-block">
+		<div class="carousel-caption d-none d-md-block titoloEdescrizione">
 			<h5>${objSet.titolo}</h5>
 			<p>${objSet.BreveDescrizione}</p>
 			</div>
