@@ -95,7 +95,10 @@ h2{
 }
 .carolImageCustom{
     height: 100%;
-    
+    padding-bottom: 20%;
+}
+.carolImageContainGallery{
+    height: 100vh;
 }
 .titoloEdescrizione{
     transform: translateY(20%);

@@ -99,6 +99,7 @@ $(document).ready(function(){
 		`;
 		element.classList.add("carousel-item")
 		element.classList.add("carolImageContain")
+        element.classList.add("carolImageGallery");
 		if (number == 0){
 			element.classList.add("active");
 		}
