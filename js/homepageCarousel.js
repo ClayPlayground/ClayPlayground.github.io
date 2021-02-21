@@ -41,7 +41,7 @@ var ajaxRequest = new XMLHttpRequest();
 
         let element = document.createElement("div");
             element.innerHTML = 
-           `<img class="d-block carolImage" src="resources/${obj.nomeFile}" alt="${obj.BreveDescrizione}">`;
+           `<img class="d-block carolImage carolImageHome" src="resources/${obj.nomeFile}" alt="${obj.BreveDescrizione}">`;
             //console.log(element); 
             element.classList.add("carousel-item")
             element.classList.add("carolImageContain")
