@@ -135,9 +135,12 @@ h2{
     text-align: center;
 }
 .contactsList{
-    width: fit-content;
-    height: fit-content;
-    margin: auto;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .developer{
     font-size: 2vh;
