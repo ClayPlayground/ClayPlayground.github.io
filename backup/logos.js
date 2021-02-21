@@ -1,6 +1,4 @@
-$(document).ready(function(){
-    
-    var ajaxRequest = new XMLHttpRequest();
+var ajaxRequest = new XMLHttpRequest();
 
 	ajaxRequest.onreadystatechange = function(){
 	
@@ -103,5 +101,3 @@ $(document).ready(function(){
 		document.getElementById("galleryPlace").appendChild(element);
 		place.appendChild(element);
 	}
-}
-);
