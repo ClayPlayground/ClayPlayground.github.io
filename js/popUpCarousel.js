@@ -1,6 +1,6 @@
 $(document).ready(function(){
             
-        EventDrafter();
+        
 
         function ActivatePanel(number){ 
             var pann = document.getElementById("panel");

@@ -32,6 +32,7 @@ var ajaxRequest = new XMLHttpRequest();
 					}
 				}
                 //SetActiveClass(place, indPlace);
+                EventDrafter();
 			}
 			else{
 				console.log("Status error: " + ajaxRequest.status);
